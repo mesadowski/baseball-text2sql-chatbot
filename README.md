@@ -12,3 +12,12 @@ I borrowed the code to force OpenAI to generate a SQL call from the OpenAI cookb
 https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb
 
 
+
+## MCP server
+
+This repository now includes an MCP server (`mcp_server.py`) with tools to:
+- generate SQL from a baseball question (`generate_sql`)
+- run SQL against the SQLite database (`query_database`)
+- do both in one step (`answer_question`)
+
+The server uses curated few-shot examples (including the newly added/fixed ones) so MCP clients get the same quality prompt guidance.
